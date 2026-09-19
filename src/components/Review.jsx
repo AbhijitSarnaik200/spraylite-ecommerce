@@ -1,13 +1,13 @@
 export default function Review({ quote, name, meta }) {
-  return (
-    <article className="review">
-      <div className="stars">★★★★★</div>
+    return (
+        <article className="review">
+            <div className="stars">★★★★★</div>
 
-      <p>“{quote}”</p>
+            <p>“{quote}”</p>
 
-      <strong>{name}</strong>
+            <strong>{name}</strong>
 
-      <small>{meta}</small>
-    </article>
-  );
+            <small>{meta}</small>
+        </article>
+    );
 }

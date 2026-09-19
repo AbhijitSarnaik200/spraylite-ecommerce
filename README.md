@@ -1,24 +1,34 @@
 
 # Spraylite E-commerce Homepage
 
-A responsive frontend assessment project for Spraylite, built with React + Vite.
+A modern, responsive e-commerce homepage built for the Spraylite frontend assessment using React and Vite.
+
+**Developed by:** Abhijit Sarnaik
+
+## Live Demo
+
+[View Live Website](https://spraylite-ecommerce.vercel.app)
+
+## GitHub Repository
+
+[View Source Code](https://github.com/AbhijitSarnaik200/spraylite-ecommerce)
 
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts
-- Modern hero section, benefits, product grid, collection banner, reviews, and newsletter section
-- Product search
+- Modern hero section
+- Benefits and product sections
+- Product search functionality
 - Wishlist counter and toggle behavior
-- Cart functionality:
-  - Add products
-  - Update quantity
+- Cart functionality
+  - Add products to cart
+  - Update product quantity
   - Remove products
   - Subtotal calculation
-- Interactive hover states
+- Interactive hover effects
 - Responsive mobile navigation
 - Toast feedback
-- Semantic HTML
-- Accessible labels
+- Semantic HTML and accessible labels
 - Reusable React components
 
 ## Tech Stack
@@ -27,45 +37,58 @@ A responsive frontend assessment project for Spraylite, built with React + Vite.
 - Vite
 - JavaScript (ES6+)
 - CSS3
-- Lucide React icons
+- Lucide React
 - Google Fonts
-- Unsplash placeholder product imagery
+- Unsplash Images
 
 ## Project Structure
 
 ```text
-spraylite-final/
-├── public/
-├── src/
-│   ├── components/
-│   ├── data/
-│   ├── assets/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles.css
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-└── README.md
+src/
+├── components/
+│   ├── Benefits.jsx
+│   ├── CartDrawer.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── ProductCard.jsx
+│   └── Review.jsx
+├── data/
+│   └── products.js
+├── assets/
+├── App.jsx
+├── App.css
+├── styles.css
+└── main.jsx
 ```
 
-## Setup
+## Installation and Setup
 
-### 1. Install Dependencies
+Clone the repository:
+
+```bash
+git clone https://github.com/AbhijitSarnaik200/spraylite-ecommerce.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd spraylite-ecommerce
+```
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 2. Start Development Server
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local URL shown by Vite in your browser.
+Open the local URL provided by Vite in your browser.
 
 ## Production Build
 
@@ -75,7 +98,7 @@ To create a production-ready build:
 npm run build
 ```
 
-To preview the production build locally:
+To preview the production build:
 
 ```bash
 npm run preview
@@ -83,25 +106,21 @@ npm run preview
 
 ## Deployment
 
-This project can be deployed on **Vercel** or **Netlify**.
+The project is deployed on **Vercel**.
 
-### Vercel
-
-1. Import the GitHub repository into Vercel.
-2. Select the default Vite settings.
-3. Deploy the project.
-
-### Netlify
-
-- **Build command:** `npm run build`
-- **Publish directory:** `dist`
+- Platform: Vercel
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
 ## Notes
 
-- The checkout button is a frontend placeholder and can be connected to a backend or payment provider in a future iteration.
-- Product imagery uses remote placeholder URLs and can be replaced with optimized local assets.
-- This project is built as a frontend-only application.
+- The checkout button is a frontend placeholder.
+- Product images use remote Unsplash URLs.
+- No backend or authentication is required for this frontend assessment.
 
 ## Author
 
-Built as a frontend assessment project for Spraylite.
+**Abhijit Sarnaik**
+
+- GitHub: [AbhijitSarnaik200](https://github.com/AbhijitSarnaik200)
+- Live Demo: [Spraylite E-commerce](https://spraylite-ecommerce.vercel.app)

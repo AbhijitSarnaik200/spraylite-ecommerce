@@ -1,4 +1,3 @@
-
 import { useMemo, useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -18,9 +17,8 @@ import Footer from "./components/Footer";
 import "./styles.css";
 
 export default function App() {
-  // -----------------------------
+
   // State Management
-  // -----------------------------
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -32,9 +30,7 @@ export default function App() {
   const [cartOpen, setCartOpen] = useState(false);
   const [notice, setNotice] = useState("");
 
-  // -----------------------------
   // Notification Management
-  // -----------------------------
 
   const showNotice = (message) => {
     setNotice(message);
@@ -50,9 +46,7 @@ export default function App() {
     return () => window.clearTimeout(timer);
   }, [notice]);
 
-  // -----------------------------
   // Product Filtering
-  // -----------------------------
 
   const filteredProducts = useMemo(() => {
     const searchTerm = query.trim().toLowerCase();
@@ -71,9 +65,7 @@ export default function App() {
     });
   }, [query]);
 
-  // -----------------------------
   // Cart Calculations
-  // -----------------------------
 
   const cartCount = useMemo(() => {
     return cart.reduce(
@@ -89,9 +81,7 @@ export default function App() {
     );
   }, [cart]);
 
-  // -----------------------------
   // Wishlist Functions
-  // -----------------------------
 
   const toggleWishlist = (productId) => {
     setWishlist((currentWishlist) => {
@@ -107,9 +97,7 @@ export default function App() {
     });
   };
 
-  // -----------------------------
   // Cart Functions
-  // -----------------------------
 
   const addToCart = (product) => {
     setCart((currentCart) => {
@@ -166,9 +154,7 @@ export default function App() {
     );
   };
 
-  // -----------------------------
   // Navigation Functions
-  // -----------------------------
 
   const handleWishlistClick = () => {
     showNotice(
@@ -190,9 +176,7 @@ export default function App() {
     showNotice("Checkout flow ready to connect");
   };
 
-  // -----------------------------
   // Render
-  // -----------------------------
 
   return (
     <div className="app">
